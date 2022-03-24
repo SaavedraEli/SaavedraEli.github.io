@@ -15,12 +15,46 @@
                 <legend>
                     Alta Usuario
                 </legend>
-                <form action="Altausuario.html">
+                <form action="Altausuario.html"method="post">
                 <input type="file" name="dni-frente">
                 <input type="hidden" value="valoroculto" name="CampoHidden">
                 <input type="url" name="url" required placeholder="http://www.dominio.com">
                 <input type="Text" name="nombre" required placeholder="Ingrese Datos" title="Error de Validacion">
                 <input type="Text" placeholder="Entre 0 y 9" required pattern="[0-9]">
+                <br>
+                <br>
+
+                <textarea name="Info-Extra" cols="20" rous="5"></textarea>
+                <hr>
+                <select multiple name="SelecMultiple" required>
+                    <optgroup label="Animales">
+                        <option>Le&oacute;n</option>
+                        <option>Tigre</option>
+                    </optgroup>
+                    <optgroup label="Colores">
+                        <option>Blanco</option>
+                        <option>Negro</option>
+                        <option>Rojo</option>                       
+                    </optgroup>
+                </select>
+                <br>
+                <input list="Browser" name="dataBrowser">
+                <datalist ID="Browser">
+                    <option>Chrome</option>
+                    <option>Edge</option>
+                    <option>Firefox</option> 
+                    <option>Opera</option>
+                </datalist>
+                <br>
+                <label for="Buscar">Tipo Search</label>
+                <input type="search"name="Buscar" id="Buscar">
+                <br>
+                <label for="BuscarText">Tipo Text</label>
+                <input type="search"name="BuscarText" id="Buscar">
+                <br>
+
+
+
                 <input type="submit" value="Enviar">
                 
                 </form>            
