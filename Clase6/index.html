@@ -11,12 +11,20 @@
     <main>
         <section>
             <h1>Clase 6</h1>
-            <form action="Altausuario.html">
-                <input type="file">
-
+            <fieldset>
+                <legend>
+                    Alta Usuario
+                </legend>
+                <form action="Altausuario.html">
+                <input type="file" name="dni-frente">
+                <input type="hidden" value="valoroculto" name="CampoHidden">
+                <input type="url" name="url" required placeholder="http://www.dominio.com">
+                <input type="Text" name="nombre" required placeholder="Ingrese Datos" title="Error de Validacion">
+                <input type="Text" placeholder="Entre 0 y 9" required pattern="[0-9]">
                 <input type="submit" value="Enviar">
-
-            </form>
+                
+                </form>            
+            </fieldset> 
         </section>
 
 
