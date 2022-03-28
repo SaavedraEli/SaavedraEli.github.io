@@ -4,6 +4,12 @@
 body {background-color: rgb(255, 123, 0);}
 
 /*aplicar estilo por id*/
+
 #idsection{
     background-color: blueviolet;}
 #idnav{background-color: brown;}
+
+/*Aplicar estililo por clase*/
+.Link{
+    color: crimson;
+}
