@@ -1,15 +1,30 @@
 * {
     background-color: aqua;
 }
-body {background-color: rgb(255, 123, 0);}
+body {background-color: rgb(89, 0, 255);}
 
 /*aplicar estilo por id*/
 
 #idsection{
     background-color: blueviolet;}
-#idnav{background-color: brown;}
+#idnav{background-color:rgb(205, 243, 255) }
 
 /*Aplicar estililo por clase*/
 .Link{
-    color: crimson;
-}
+    color: crimson;}
+
+    ul {
+        display: block;
+        list-style-type: disc;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+    }
+    a{
+        text-decoration: none;
+    }
+    #Linkactive{
+        color: crimson;
+    }
