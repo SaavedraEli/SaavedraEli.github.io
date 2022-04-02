@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
+h1{
+    /*tamaño de la letra*/
+    font-size: 100px;
+    /*Tipo de Fuente*/
+    font-family: 'Roboto Slab', serif;
+    /*Estilo*/
+    font-style: italic;
+    /*grosor del texto*/
+    font-weight: 500;
+}
+h2{
+    font-family: 'Roboto Slab', serif;
+}
