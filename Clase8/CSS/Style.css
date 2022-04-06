@@ -21,5 +21,35 @@ font-style: italic;
 /*propiedades del texto*/
 .Text-right {
     letter-spacing: 3px;
-    text-align: right;
+    text-align: justify;
+    word-spacing: 15px;
+    text-transform:uppercase;
+    text-decoration: overline underline;
+    text-decoration-color: blueviolet;
+    text-decoration-style:wavy;
+}
+h3{
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 1px 1px royalblue;
+    font-weight: 700;
+
+}
+/*Bordes*/
+section table{
+    border: 2px solid black;
+    border-right: 2px solid rgb(224, 19, 19);
+    border-bottom: 2px solid rgb(32, 232, 39);
+
+}
+section table td{
+    border: 2px solid black;
+    border-right: 2px solid rgb(224, 19, 19);
+    border-bottom: 2px solid rgb(32, 232, 39);
+
+}
+section table tr th{
+    border: 2px solid black;
+    border-right: 2px solid rgb(224, 19, 19);
+    border-bottom: 2px solid rgb(32, 232, 39);
+
 }
