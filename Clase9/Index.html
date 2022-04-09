@@ -5,30 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        *{
-            /*elimino margenes (margin)*/
-            margin: 0px;
-        }
-        div{
-            margin: 15px;
-            border: 2px solid red;
-            padding: 25px 10px;
-            width: 500px;
-            /*div 500px 4+ 50+20*//*426*/
-            box-sizing:border-box ;
-        }
-    </style>
-
-</head>
+   </head>
 <body>
     <main>
         <section>
-            <div>
-                <p>Texto</p>
+            <div class="cuadrado">
+                <ul>
+                    <li>
+                        <a>Opciones</a>
+                    </li>
+                </ul>
+                <div class="circulo"></div>
+
             </div>
-
-
+        </section>
+        <section>
+            <div class="divBox">
+                <h1>Texto</h1>
+            </div>
+            <div class="divBox">
+                <h2>sub Texto</h2>
+            </div>
+        </section>
+        <!--Especificidad-->
+        <section id="sec2">
+            <h3 id="sec1" style="color:blueviolet" >sub titulo 3</h3>
+        </section>
+        <section class="medidas">
+            <h3>texto h3</h3>
+            <p>texto en section</p>
+        </section>
+        <section class="foto">
+            <img src="lossimpson.webp" class="foto">
         </section>
 
 
