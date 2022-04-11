@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Pseudo Clases*/
+        /*Visitados*/
+         a:visited {
+            color: aquamarine;
+            }
+          /*Seleccionar y al pasar por arriba se pone rojo*/
+          a:hover{
+            color: blueviolet;
+            font-size: 18px;
+            text-decoration: line-through;
+          }
+          /*a:active*/
+          a:active{
+          color: green;
+          text-transform: uppercase;
+          }
+          /*Elementos Hermanos nth:child*/
+          div p:nth-child {
+          color: green;
+          font-size: 2em;
+          }
+          div p:nth-child(even) {
+              color: chartreuse;          
+              font-size: 2em;
+          }
+
+          /*Table*/
+          table {
+          border: 1px solid red;
+          }
+          table tr:nth-child(even) {
+              color: darkorange;
+          
+          }
+          table tr:nth-child(odd) {
+              background-color: blueviolet;
+          
+          }
+           
+        </style>
+</head>
+<body>
+    <main>
+        <h1>Titulo</h1>
+        <section>
+                <p>Texto 1</p>
+                <a href="html://www.google.com.ar">Ir a Google</a>
+                <a href="html://www.twitter.com.ar">Ir a Twitter</a>
+                <a href="html://www.facebook.com.ar">Ir a Facebook</a>
+                <a href="Pseudoelementos.html">Pseudo Elementos</a>
+        </section>
+        <section>
+               <div>
+                   <p>Texto 1</p>
+                   <p>Texto 2</p>
+                   <p>Texto 3</p>
+               </div>
+               <table>
+                     <tr>
+                         <!--titulo-->
+                         <th>
+                           ID
+                         </th>
+                         <th>
+                           Nombre
+                         </th>
+                         <th>
+                           Precio
+                         </th> 
+                         <th>
+                           Detalle
+                         </th>
+                                  
+                     </tr>
+                     <!--registros pares de un color e impares de otros--> 
+                     <tr>
+                         <td>
+                            1
+                         </td>    
+                         <td>
+                            mate listo
+                         </td>
+                         <td>
+                            1500
+                         </td>
+                         <td>
+                            bla
+                         </td>   
+                     </tr>
+                     <tr>
+                        <td>
+                           1
+                        </td>    
+                        <td>
+                           mate listo
+                        </td>
+                        <td>
+                           1500
+                        </td>
+                        <td>
+                           bla
+                        </td>   
+                    </tr>
+                    <tr>
+                        <td>
+                           1
+                        </td>    
+                        <td>
+                           mate listo
+                        </td>
+                        <td>
+                           1500
+                        </td>
+                        <td>
+                           bla
+                        </td>   
+                    </tr>
+               </table>
+               
+        </section>
+   </main>
+
+</body>
+</html>

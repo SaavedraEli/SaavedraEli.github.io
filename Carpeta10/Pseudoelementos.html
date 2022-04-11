@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1::before {
+            content: '#';
+        }
+        h1::after {
+            content: '*';
+        }
+        h1 {
+            color:violet ;
+            font-family: 'Courier New', Courier, monospace;
+            text-transform: lowercase;
+
+        }
+        h1::first-letter {
+            border: 2px solid orange;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Pseudo Elementos</h1>
+        </section>
+    </main>
+</body>
+</html>
