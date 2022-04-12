@@ -21,12 +21,23 @@
         h1::first-letter {
             border: 2px solid orange;
         }
+        section p.clasep {
+          font-style: italic;
+        }
+        section p.clasep::before {
+        content:'-';
+        }
+        section p.clasep::after{
+        content: '#' ;
+        }
     </style>
 </head>
 <body>
     <main>
         <section>
             <h1>Pseudo Elementos</h1>
+            <h2>sub titulo 2</h2>
+            <p class="clasep">texto</p>
         </section>
     </main>
 </body>

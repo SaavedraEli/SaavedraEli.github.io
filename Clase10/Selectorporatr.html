@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*selectores por atributo*/
+        
+        [href] {
+            background-color: blueviolet;
+            text-decoration: none;
+        }
+        /*elemento con contenido exacto*/
+        [href="nosotros.html"] {
+            background-color: gold;
+        }
+        /*comience con algo*/
+        [href^="i"] {
+            background-color: rgb(6, 248, 103);
+        }
+        /*contiene algo*/
+        [href*="s"] {
+            background-color: rgb(246, 230, 230);
+        }
+        /*terminen algo*/
+        [href$="l"] {
+            background-color: rgb(224, 80, 183);
+            color: mintcream;
+        }
+        /*atributo y algun atributo del elemento*/
+        img{
+            width: 150px;
+            height: 100px;
+        }
+        img[alt="s1"] {
+            border: 2px solid red;
+        }
+        img[alt="s2"] {
+            border: 2px solid gray;
+        }
+        .imagenes img[alt="s1"] {
+            border: 2px solid rgb(198, 237, 41);
+        }
+        .imagenes2 img[alt="s1"] {
+            border: 2px solid rgb(183, 24, 181);
+        }
+        .imagenes2 img[alt="s1"]:hover {
+            border-radius: 50%;
+        }
+        .imagenes img[alt="s2"]:hover {
+            border-radius: 50%;
+            border: 5px solid black;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+               <li>
+                  <a href="index.html">Home</a> 
+               </li>
+               <li>
+                  <a href="nosotros.html">Nosotros</a> 
+               </li>
+               <li>
+                <a href="contacto.html">Contacto</a> 
+               </li>
+               <li>
+                <a href="imagenes.html">Imagenes</a> 
+               </li>
+               <li>
+                <a href="email.html">Email</a> 
+               </li>
+            </ul>       
+        </nav>
+ 
+    </header>
+    <section>
+        <div class="imagenes">
+        <img src="../Clase9/lossimpson.webp" alt="s1">
+        <img src="../Clase9/lossimpson.webp" alt="s2">
+        </div>
+        <div class="imagenes2">
+            <img src="../Clase9/lossimpson.webp" alt="s1">
+            <img src="../Clase9/lossimpson.webp" alt="s2">
+            </div>
+    </section>
+</body>
+</html>
