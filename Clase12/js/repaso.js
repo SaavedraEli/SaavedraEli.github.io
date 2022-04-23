@@ -1,0 +1,5 @@
+// variable
+
+//estructura de iteraccion
+
+
