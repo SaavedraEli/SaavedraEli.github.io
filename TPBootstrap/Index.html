@@ -21,7 +21,7 @@ filter: brightness(0.5);
 margin: 0px;
 padding: 0px;
 position: relative;
-
+height: auto;
 
 
 }
@@ -41,11 +41,13 @@ position: relative;
  font-family: var(--bs-body-font-family);
  font-size: var(--bs-body-font-size);
 text-align: right;
-
+}
+.text-end {
+  text-align: justify;
 }
 
 .text {
-  color: darkgreen;
+  color: rgb(19, 134, 19) !important;
   text-decoration: none;
   
   /*font-family: var(--bs-body-font-family);
@@ -96,20 +98,21 @@ text-align: right;
   background-color:white;
   border-radius: 1%;
 }*/
-.p .text-center {
-  text-align:right;
+
 }
+
 div.oradores {
   margin: 10px 20px;
   width: 350px;
-  float: left;
+  float:left;
 
 }
 div.foto img {
-width: 80%;
+width: 100%;
 height: auto;
 
 }
+
 div.piefoto {
   text-align: center;
   padding: 10px;
@@ -156,10 +159,10 @@ div.piefoto {
         <div class="col-4 text-center">                
             <img src="ba1.jpg" class="container-img">            
             <div class="texto">
-            <h1>Conf Bs As</h1>   
+            <h1 >Conf Bs As</h1>   
             <p>Bs As llega por primera vez a la Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que estan creando el futuro de Internet. Van a conocer miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
-            <button type="button" class="btn btn-outline-light">Quiero ser Orador</button>
-            <button type="button" class="btn btn-success">Comprar tickets</button>            
+            <button type="button" class="btn btn-outline-light text-center">Quiero ser Orador</button>
+            <button type="button" class="btn btn-success text-center">Comprar tickets</button>            
             </div>
         </div>
         </div> 
@@ -170,32 +173,41 @@ div.piefoto {
               <h1>ORADORES</h1>
           </div>
         </section>
-        <section class="container-fluid">
-          <div class="containar">
+        <section class="container">
+          <div class="col-4 container">
           <div class="oradores">
             <div class="foto">
               <img src="./steve.jpg" alt="">
             </div>
             <div class="piefoto">
-              <p>steve</p>
-            </div>
+              <button type="button" class="btn btn-warning btn-sm">JavaScript</button>
+              <button type="button" class="btn btn-success btn-sm">React</button>
+              <p>Steve Jobs</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis dolor ab dicta vero rem maxime sint doloremque beatae eius fugiat. Unde modi sequi facere ut natus sint distinctio minima eaque.</p>
+           </div>
           </div>
-            <div class="oradores">
+          <div class="oradores">
               <div class="foto">
                 <img src="./bill.jpg" alt="">
               </div>
               <div class="piefoto">
-                <p>bill</p>
+              <button type="button" class="btn btn-warning btn-sm">JavaScript</button>
+              <button type="button" class="btn btn-success btn-sm">React</button>
+                <p>Bill Gates</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At ad, commodi dolores rem, eligendi possimus tempora hic nostrum, aliquid aspernatur vel doloremque voluptates harum officia nemo ratione. Consequuntur, quia odio.</p>
               </div>
-            </div>
-              <div class="oradores">
+          </div>
+          <div class="oradores">
                 <div class="foto">
                   <img src="./ada.jpeg" alt="">
                 </div>
                 <div class="piefoto">
-                  <p>ada</p>
+                  <button type="button" class="btn btn-secondary btn-sm">Negocios</button>
+                  <button type="button" class="btn btn-danger btn-sm">Startups</button>
+                  <p>Ada Lovelace</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nemo at consequuntur impedit ad quam natus ducimus sequi asperiores dicta, odio dolor saepe quibusdam, adipisci, repellat quaerat ex maxime veritatis.</p>
                 </div>
-              </div>          
+          </div>          
         </div>
 
         </section>
