@@ -1,119 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Codo a Codo</title>
-    <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-<style>
-  /* Ba1*/
-    .container-img{
-/*width: 1500px;
-height:950px;
-margin: 0;
-filter:brightness(0.5)
-*/
-background-size: cover;
-background-position: center center;
-background-attachment: fixed;
+    <title>Trabajo Practico Codo a Codo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <style>
+    /*Imagen BA*/
+.img-fluid  {
 filter: brightness(0.5);
-margin: 0px;
-padding: 0px;
-position: relative;
-height: auto;
-
-
+position:relative;
 }
-[alt="C1"] {
-    
+/*Comprar Tickets en verde*/
+.text {
+    color: rgb(19, 134, 19) !important;
+}
+/*Imagen Codo a Codo*/
+.Imagenc {
     width: 150px;
     height: 75px;
-     }
-
-.texto {
- color: white;    
- position: absolute;
- top: 45%; 
- left: 0; 
- width: 100%; 
- margin:auto;
- font-family: var(--bs-body-font-family);
- font-size: var(--bs-body-font-size);
-text-align: right;
 }
-.text-end {
-  text-align: justify;
-}
-/*Comprar Tickets*/
-.text {
-  color: rgb(19, 134, 19) !important;
-  text-decoration: none;
-  
-  /*font-family: var(--bs-body-font-family);
-  font-size: var(--bs-body-font-size);
-  font-weight: var(--bs-body-font-weight);
-  line-height: var(--bs-body-line-height);
-  min-width: 992px;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;*/
-  
-}
-.divBox {
-  text-align: center;
-  border: none;
-  margin: 2px;
-  padding: 25px 17px;
-  width: 100%;
-  box-sizing:border-box;
-  display: inline-block;
-  font-size: 10px;
-  margin-top: 1px;
-}
-.divBox p {
-  text-align: center;
-    font-size: 20px;
-}
-/*.steve{
-  width: 90%;
-  height: auto;  
-  margin: auto;
-  display: block;
-  background-color:white;
-  border-radius: 1%;
-}
-.bill{
-  width: 90%;
-  height: auto;  
-  margin: auto;
-  display: block;
-  background-color:white;
-  border-radius: 1%;
-}
-.ada {
-  width: 90%;
-  height: auto;  
-  margin: auto;
-  display: block;
-  background-color:white;
-  border-radius: 1%;
-}*/
-
+/*Conf Bs As*/
+.card-body-1 {
+    position:absolute;
+   
 }
 
-/*Cards de Oradores*/
-.card-body {
-  text-align: center;
-  padding: 10px;
+/*Card bs As - Octubre*/
+.card-body-2 {
+    background-color: rgb(60, 64, 88);
 }
-
-.img, .foto {
-    
-    vertical-align: middle;
-     }
-
-
 
 </style>
 </head>
@@ -148,81 +65,115 @@ text-align: right;
                 </ul>
               </div>            
             </div>
-          </nav>        
+          </nav>    
     </header>
     <main>
-     <section class="container-fluid">
-       <div class="row">
-        <div class="col-4 text-center">                
-            <img src="ba1.jpg" class="container-img">            
-            <div class="texto">
-            <h1 >Conf Bs As</h1>   
-            <p>Bs As llega por primera vez a la Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que estan creando el futuro de Internet. Van a conocer miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
-            <button type="button" class="btn btn-outline-light text-center">Quiero ser Orador</button>
-            <button type="button" class="btn btn-success text-center">Comprar tickets</button>            
-            </div>
-        </div>
-        </div> 
+        <section>
+            <img src="ba1.jpg" class="img-fluid max-width: 100%; height: auto">
+            <div class="container">
+            <div class="row">               
+            <div class="col-4 card w-27 border-0">                     
+            <div class="card-body-1">                  
+                  <h5 class="card-title text-center">Conf Bs As</h5>
+                  <p class="card-text text-end">Bs As llega por primera vez a la Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que estan creando el futuro de Internet. Van a conocer miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+                  <button type="button" class="btn btn-outline-light text-center">Quiero ser Orador</button>
+                  <button type="button" class="btn btn-success text-center">Comprar tickets</button>
+                </div>
+              </div>
+              </div>
+            </div>        
         </section>
         <section>
-          <div class="divBox">
-              <p>CONOCE A LOS</p>
-              <h1>ORADORES</h1>
-          </div>
+            <div class="divBox text-center">
+                <p class="fs-5">CONOCE A LOS</p>
+                <h1>ORADORES</h1>
+            </div>
         </section>
         <section class="container">
-          <div class="row col-md-12 text-sm-start">
-          <div class="card border-2 col-md-6" style="width: 10cm; height: 15cm;">
-            <img src="./steve.jpg" class="card-img-top" alt="foto">
-            <div class="card-body">
-              <button type="button" class="btn btn-warning btn-sm">JavaScript</button>
-              <button type="button" class="btn btn-success btn-sm">React</button>
-              <h5 class="card-title">Steve Jobs</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure iste eum amet placeat voluptatem sint? Harum dicta aliquid autem! Ex eos ab ad nulla sint. Eos eligendi perferendis vel odio..</p>              
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                      <img src="./steve.jpg" class="card-img-top" alt="...">                      
+                      <div class="card-body">
+                        <button type="button" class="btn btn-warning btn-sm fw-bold">JavaScript</button>
+                        <button type="button" class="btn btn-success btn-sm fw-bold">React</button>  
+                        <h5 class="card-title">Steve Jobs</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis laborum voluptates provident nesciunt aut necessitatibus dolorum? Itaque suscipit expedita ut soluta earum veritatis quae. Sapiente dolores laboriosam tempora a maxime.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="./bill.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <button type="button" class="btn btn-warning btn-sm fw-bold">JavaScript</button>
+                        <button type="button" class="btn btn-success btn-sm fw-bold">React</button>  
+                        <h5 class="card-title">Bill Gates</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae officia aliquid maiores blanditiis similique enim ad, odio eveniet labore molestias neque ratione adipisci animi expedita odit ab itaque tempore quod!</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                      <img src="./ada.jpeg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <button type="button" class="btn btn-secondary btn-sm fw-bold">Negocios</button>
+                        <button type="button" class="btn btn-danger btn-sm fw-bold">Startups</button>  
+                        <h5 class="card-title">Ada Lovelace</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium laudantium pariatur dicta laborum eligendi ab fuga enim assumenda quibusdam. Quibusdam necessitatibus beatae labore! Optio quaerat harum cumque magni omnis rem.</p>
+                      </div>
+                    </div>
+                  </div>
             </div>
-          </div>
-          <div class="card border-2 col-md-6 " style="width: 10cm; height: 15cm;">
-            <img src="./bill.jpg" class="card-img-top" alt="foto">
-            <div class="card-body">
-              <button type="button" class="btn btn-warning btn-sm">JavaScript</button>
-              <button type="button" class="btn btn-success btn-sm">React</button>
-              <h5 class="card-title">Bill Gates</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni itaque asperiores quidem molestias molestiae repellat ex iste earum! Accusantium, culpa. Fuga, corrupti placeat eum adipisci culpa autem quod repellat corporis!</p>              
-            </div>
-          </div> 
-          <div class="card border-2 col-md-6" style="width: 10cm; height: 15cm;">
-            <img src="./ada.jpeg" class="card-img-top" alt="foto">
-            <div class="card-body">
-              <button type="button" class="btn btn-secondary btn-sm">Negocios</button>
-                <button type="button" class="btn btn-danger btn-sm">Startups</button>
-              <h5 class="card-title">Ada Lovelace</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni itaque asperiores quidem molestias molestiae repellat ex iste earum! Accusantium, culpa. Fuga, corrupti placeat eum adipisci culpa autem quod repellat corporis!</p>              
-            </div>
-          </div>
-        </div>        
-
         </section>
         <br>
-        <section class="container-fluid">
-          <div class="card border-2 col-md-12" style="width: 18rem;">
-            <img src="./honolulu.jpg" class="card-img-top" alt="...">            
-            </div>
-          </div>
-          <div class="card border-2 col-md-12" style="width: 18rem;">            
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-
+        <section>
+            <div class="card mb-6" style="max-width: 1620px;">
+                <div class="row g-0">
+                  <div class="col-xl-6">
+                    <img src="./honolulu.jpg" class="img-thumbnail rounded-start" alt="...">
+                  </div>
+                  <div class="col-6" style="max-width: 100%;">
+                    <div class="card-body-2">
+                      <h5 class="card-title text-light">Bs As - Octubre</h5>
+                      <p class="card-text text-light">Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km de superficie).</p>
+                      <button type="button" class="btn btn-outline-light text-center">Conocé más</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </section>
-        
+        <section>
+            <div class="divBox text-center">
+                <p class="fs-5">CONVERTITE EN UN</p>
+                <h1>ORADOR</h1>
+                <p>Anótate como orador para dar una charla ignite. Cuéntanos de que quieres hablar!</p>
+            </div>
+        </section>
+       <section class="container">
+        <div class="row g-2">
+            <div class="col-md">
+              <div class="form-floating">
+                <input type="text" class="form-control" id="Nombre" placeholder="Nombre">                
+              </div>
+            </div>
+            <div class="col-md">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="Apellido" placeholder="Apellido">                  
+                </div>
+              </div>
+        </div>
+        <div class="form-floating mt-2">
+            <textarea class="form-control" placeholder="Sobre qué quieres hablar?" id="floatingTextarea2" style="height: 100px"></textarea>            
+            <div id="emailHelp" class="form-text">Recuerde incluir un titulo para la charla</div>   
+        </div>
+                
+        <div class="d-grid gap-2 mt-2">
+            <button class="btn btn-success" type="button">Enviar</button>           
+        </div>
 
-    
+       </section>
+
     </main>
-    
 </body>
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </html>
