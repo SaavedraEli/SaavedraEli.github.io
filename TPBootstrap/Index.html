@@ -45,17 +45,49 @@ height: auto;
     padding: 100px 0px 100px 0px;
 
 }
+/*Casillero*/
+#casillero {
+  max-width: 700px;
+  top: 500px;
+  left: 500px;
+}
 
 /*boton enviar*/
-.btn .btn-success [href="Enviar"] {
- background-color: chartreuse;
+#Enviar {
+ background-color: rgb(116, 205, 27);
+ 
 }
 /*Footer*/
 footer .navbar{
 text-align: center;
 background-color: rgb(11, 44, 88);
+}
+
+.piedepagina{
+  width: 100%;
+  height: auto;
+  background-color: rgb(6, 16, 74); 
+  margin-top: 45px;
+}
+#footerazul {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+ 
+}
+.piedepagina #footerazul .box {
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
 
 }
+
 </style>
 </head>
 <body>
@@ -174,59 +206,53 @@ background-color: rgb(11, 44, 88);
                 <p>Anótate como orador para dar una charla ignite. Cuéntanos de que quieres hablar!</p>
             </div>
         </section>
-       <section class="container">
-        <div class="row g-2">
-            <div class="col col-md">              
+       <section class="container" id="casillero">
+        <div class="row g-3" >
+            <div class="col col-md-6" >              
                 <input type="text" class="form-control" aria-label="Nombre" aria-describedby="addon-wrapping" placeholder="Nombre">                                
               </div>
-            <div class="col col-md">                
+            <div class="col col-md-6">                
                   <input type="text" class="form-control" id="Apellido" placeholder="Apellido">            
             </div>
         </div>
-        <div class="col mt-2">
+        <div class="col col-md-12 mt-2">
             <textarea class="form-control" placeholder="Sobre qué quieres hablar?" id="floatingTextarea2" style="height: 100px"></textarea>            
             <div id="emailHelp" class="form-text">Recuerde incluir un titulo para la charla</div>   
         </div>
                 
-        <div class="d-grid gap-2 mt-2">
-            <button class="btn btn-success" type="button">Enviar</button>           
+        <div class="d-grid col-md-12 gap-2 mt-2">
+            <button class="btn text-white" id="Enviar" type="button">Enviar</button>           
         </div>
 
        </section>
 
     </main>
 </body>
-<footer>
-  <nav class="navbar navbar-expand-lg navbar-light mt-3">
-    <div class="container-fluid">         
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="#">Preguntas <br> 
-              frecuentes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="#">Contáctanos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="#">Prensa</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="#">Conferencia</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="#">Terminos y <br> Condiciones</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="#">Privacidad</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="#">Estudiantes</a>
-          </li>
-        </ul>
-      </div>    
-    </div>
-  </nav>
+<footer class="piedepagina">  
+    <div class="container-fluid" id="footerazul">         
+      <div class="box">
+         <p class="text-white"> Preguntas <br> 
+          frecuentes</p>
+      </div>
+      <div class="box">
+        <p class="text-white"> Contáctanos</p>
+      </div>
+      <div class="box">
+        <p class="text-white">Prensa</p>        
+      </div>
+      <div class="box">
+        <p class="text-white" >Conferencia</p>        
+      </div>
+      <div class="box">
+        <p class="text-white">Terminos y <br>Condiciones</p>        
+      </div>
+      <div class="box">
+        <p class="text-white">Privacidad</p>        
+      </div>
+      <div class="box">
+        <p class="text-white">Estudiantes</p>        
+      </div>      
+    </div>  
 </footer>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
