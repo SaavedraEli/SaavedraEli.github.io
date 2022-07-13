@@ -11,17 +11,21 @@
 .text {
     color: rgb(19, 134, 19) !important;
 }
-  
+  /*Cajas y Colores*/
 .divBox {
-    margin: 20px;
-    border: 2px solid red;
-    padding: 50px 50px;
-    width: 60%;
-    /*div 500px 2+20*//*476*/
+    margin: 15px;
     box-sizing:border-box;
     display: inline-block;
     text-align: center;
+    width: 200px;
+    height: 200px;    
+    top: 100px;
+    left: 50px;
+    border: 2px solid rgb(10, 31, 169);
+    justify-content: center;
+    
 } 
+
 
     </style>
 </head>
@@ -58,21 +62,23 @@
     </header>
     <main>
         <section >
-        <div class="container">
-            <div class="row">
-            <div class="col-6">
-            <div class="divBox">
-                <h1>Texto</h1>
+        <div class="container-fluid col-8">
+            <div class="row">            
+            <div class="divBox" id="azul">
+                <h2>Texto</h2>            
             </div>
-            <div class="divBox">
-                <h2>sub Texto</h2>
             </div>
-            <div class="divBox">
-                <h2>sub Texto</h2>
+            <div class="row">            
+            <div class="divBox" id="verde">
+                <h2>sub Texto</h2>            
             </div>
-        </div>
-        </div>
-        </div>
+            </div>
+            <div class="row">            
+            <div class="divBox" id="amarillo">
+                <h2>sub Texto</h2>            
+            </div>
+            </div>        
+         </div>
         </section>
     </main>
 </body>
