@@ -1,41 +1,20 @@
-async function getUserData(pagina) {
+const form = document.getElementById("formulario");
 
-    const response = await axios.get(`https://reqres.in/api/users?page=${pagina}`);
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+    let formulario = new FormData(form);
+    formulario.get("formNombre");
+    formulario.get("formPrecio");
+    formulario.get("formCodigo");
+    let tableRef = document.getElementById("table");
+    let newtableRowRef = tableRef.insertRow(-1);
+    let newtableCellRef = newtableRowRef.insertCell(0);
+    newtableCellRef.textContent = formulario.get("formNombre");
+    let newtableCellRef = newtableRowRef.insertCell(1);
+    newtableCellRef.textContent = formulario.get("formPrecio");
+    let newtableCellRef = newtableRowRef.insertCell(2);
+    newtableCellRef.textContent = formulario.get("formCodigo");
+    
+}   
 
-    console.log(response);
-    
-    return response;
-}
-
-//asociar al boton un evento
-const btn = document.getElementById('dardealta');
-
-//asocio el envento click
-btn.addEventListener('click',async () => {
-    
-    const paginaInput = document.getElementById('pagina');
-    if(!paginaInput.value) {
-        alert('Ingrese pagina a buscar');
-        return;
-    }
-    const response = await getUserData(+paginaInput.value);
-    
-    //AXIOS retorna obj.data > json que viene del servidor
-    const jsonData = response.data //ojo no es el data 
-    
-    // SOLO VOY A TOMAR DEL OBJETO
-    const jsonDataMapped = jsonData.data.map((x) => {
-        return {
-            id: x.id,
-            email: x.email
-        }
-    });
-
-    //puedo actualizar el div con jsonData
-    const jsonDataAsText = JSON.stringify(jsonDataMapped);
-    
-    //actualizo el valor del div
-    //capturo el div por su id
-    const divEnHtml = document.getElementById('content');
-    divEnHtml.innerHTML = jsonDataAsText;
-});
+)

@@ -6,7 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alta</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-</head>
+    <style>
+      body{
+        background-color: coral;
+      }
+      .piedepagina{
+    text-align: center;    
+    margin-top: 200px;    
+  }
+  .box{
+    background-color: rgb(255, 60, 0);
+    width: 0px 20px;
+    height: 0px 20px ;
+  }
+
+  
+    </style>
+  </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-light">
@@ -33,16 +49,17 @@
           </nav>
     </header>
     <main>
-      <div class="container">
+          <div class="container">  
           <section>
               <h1>Alta</h1>
+              <form id="formulario" action="">
               <div class="mb-3">
                   <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+                  <input type="text" class="form-control" id="formNombre" name="formNombre" placeholder="Nombre">
                 </div>
                 <div class="mb-3">
                   <label for="exampleFormControlInput1" class="form-label">Precio</label>
-                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="$">
+                  <input type="text" class="form-control" id="formPrecio" name="formPrecio" placeholder="$">
                 </div>
                 <div class="mb-3">
                   <label for="formFil" class="form-label">Imagen</label>
@@ -50,16 +67,25 @@
                 </div>
                 <div class="mb-3">
                   <label for="exampleFormControlInput1" class="form-label">Código</label>
-                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+                  <input type="text" class="form-control" id="formCodigo" name="formCodigo" placeholder="">
                 </div>
-                <a href="#" class="btn btn-primary active" role="button" data-bs-toggle="button" aria-pressed="true" id="dardealta">Dar de alta</a>
+                <button id="dardealta"class="btn btn-primary active"> Dar de Alta</button>
+              </form>
           </section>
+        </div>
   
-      </div>
+      
   </main>
-  <!-- JavaScript Bundle with Popper -->
+  
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-<script scr="script-alta.js"></script>
+<footer class="piedepagina"> 
+  <div class="container-fluid" id="footerazul">   
+  <div class="box">
+    <p class="text-white">Términos y Condiciones</p>        
+  </div> 
+</div>    
+</footer>
+<!-- JavaScript Bundle with Popper -->
+<script src="script-alta.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </html>

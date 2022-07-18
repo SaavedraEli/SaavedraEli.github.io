@@ -6,7 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listado</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-</head>
+<style>
+  body{
+    background-color: cornflowerblue;
+  }
+  .piedepagina{
+    text-align: center;    
+    margin-top: 300px;    
+  }
+  .box{
+    background-color: rgb(221, 0, 255);
+    width: 0px 20px;
+    height: 0px 20px ;
+  }
+</style>
+  </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-light">
@@ -36,8 +50,8 @@
         <section>
             <div class="container">
             <div class="col-md-12 col-lg-8">
-                <h3>Productos</h3>
-                <table class="table">
+                <h1>Productos</h1>
+                <table id="table" class="table" href="Alta.html">
                    <thead>
                      <tr>
                        <th scope="col">ID</th>
@@ -98,6 +112,13 @@
     </main>
     <!-- JavaScript Bundle with Popper -->
 </body>
+<footer class="piedepagina"> 
+  <div class="container-fluid" id="footerazul">   
+  <div class="box">
+    <p class="text-white">Terminos y Condiciones</p>        
+  </div> 
+</div>    
+</footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-
+<script scr="script-alta.js"></script>
 </html>
